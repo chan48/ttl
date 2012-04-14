@@ -1,0 +1,22 @@
+filename = 'C:\Users\kterashita\Desktop\20120412-300C.log'
+connect 'acs6048-1.lab.jp.fortinet.com 7048'
+logopen filename 0 0
+sendln ''
+
+for x 1 50
+
+wait 'login:'
+sendln 'admin'
+wait 'Password:'
+sendln ''
+wait '#'
+sendln 'get sys stat'
+wait '#'
+sendln 'exec disk list'
+wait '#'
+sendln 'fnsysctl df'
+wait '#'
+sendln 'exec reboot'
+wait '(y/n)'
+sendln 'y'
+
