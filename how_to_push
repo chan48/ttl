@@ -1,0 +1,6 @@
+vi something
+git add .
+git commit -m "hogehoge"
+git push
+
+http://d.hatena.ne.jp/basyura/20100323/p1
